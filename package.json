@@ -1,0 +1,25 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@types/node": "^18",
+    "nuxt": "^3.5.2",
+    "sass": "^1.62.1",
+    "sass-loader": "^13.3.1"
+  },
+  "dependencies": {
+    "feather-icons": "^4.29.0",
+    "normalize.css": "^8.0.1",
+    "typed.js": "^2.0.16",
+    "vee-validate": "^4.9.6",
+    "yup": "^1.2.0"
+  }
+}
