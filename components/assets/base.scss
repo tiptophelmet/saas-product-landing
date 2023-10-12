@@ -1,0 +1,24 @@
+@use "sass:map";
+
+@import "./colors.scss";
+
+html,
+body,
+#__nuxt {
+    height: 100%;
+}
+
+h1,
+p {
+    min-height: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+
+    &.router-link-active {
+        color: map-get($colors, "primary");
+    }
+}

@@ -1,0 +1,20 @@
+$breakpoints: (
+    'xsmall': 320px,
+    'small': 576px,
+    'medium': 768px,
+    'large': 992px,
+    'xlarge': 1200px
+);
+
+// Mixin for responsive design
+@mixin respond-to($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media (min-width: map-get($breakpoints, $breakpoint)) {
+            @content;
+        }
+    }
+
+    @else {
+        @warn "Invalid breakpoint: #{$breakpoint}.";
+    }
+}
